@@ -3,9 +3,12 @@
   "private": true,
   "version": "1.0.3",
   "description": "A simple web component",
-  "main": "simple-carousel.js",
-  "module": "simple-carousel.js",
+  "main": "./lib/simple-carousel.js",
+  "module": "./lib/simple-carousel.js",
   "type": "module",
+  "exports": {
+    "./simple-carousel.js": "./lib/simple-carousel.js"
+},
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
